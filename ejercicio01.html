@@ -3,12 +3,13 @@
 <head lang="es'MX">
   <meta charset="utf-8">
   <title>Prevalidación</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="ejercicio01.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/ejercicio01.css">
+  <script src="js/ejercicio01.js" defer></script>
 </head>
 
 <body>
-  <form method="get" action="">
+  <form id="form" method="get" action="">
 
     <fieldset>
       <legend>Detalles de la foto</legend>
@@ -17,11 +18,11 @@
           <td colspan="2">
             <p>
               <label>Título</label><br>
-              <input type="text" name="title"  size="80">
+              <input type="text" name="title" size="80" required />
             </p>
             <p>
               <label>Descripcion</label><br/>
-              <textarea name="description" rows="7" cols="85">
+              <textarea name="description" rows="7" cols="85" required>
               </textarea>
             </p>
           </td>
@@ -83,7 +84,7 @@
           <td colspan="2">
             <div class="rec">
               <label>Acepto la licencia de software</label>
-              <input type="checkbox" name="accept">
+              <input type="checkbox" name="accept" required />
             </div>
           </td>
         </tr>

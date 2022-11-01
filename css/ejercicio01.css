@@ -85,3 +85,40 @@ form p {
     width: 7em;
 
 }
+
+input:invalid {
+    border: 1px solid black;
+}
+
+input:invalid:required {
+    background-color: red;
+  }
+  
+  input:valid {
+    border: 1px solid black;
+  }
+
+textarea{
+    resize: none;
+}
+
+textarea:invalid{
+    border: 1px solid black;
+}
+
+textarea:invalid:required {
+    background-color: red;
+  }
+  
+  textarea:valid {
+    border: 1px solid black;
+  }
+
+  .warning {
+    border: 2px solid #f36353;
+    border-radius: 2px;
+    padding: 10px;
+    position: absolute;
+    background-color: #f39389;
+    color: #3b3c40;
+  }
